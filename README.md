@@ -24,7 +24,7 @@ The other provides BeanBoard's RD# (see below).
 
 Every peripheral sits on a "slow bus" behind the VIA, under software control, allowing for slower devices to be connected (and 6502 dummy reads can't reach them).
 
-The "slow bus" provides 6502-style signals - address and R/W#, with the addition of an I/O enable strobe.
+The slow bus provides 6502-style signals - address and R/W#, with the addition of an I/O enable strobe.
 
 These are made available through two 2x7 VIA Interface headers (in [Garth Wilson's VIA connector format](https://wilsonminesco.com/6502primer/potpourri.html#BAS_CPU)).
 
@@ -56,7 +56,7 @@ BeanBoardSPI can piggyback on BeanBoard and provide storage and replace the char
 
 ## Breadboard Prototype
 
-The prototype has an Arduino Mega generating the clock and monitoring the bus, an 8k AT28C64B ROM, and BeanPort directly on the CPU bus (not yet behind the VIA):
+A prototype (without RAM or VIA) has an Arduino Mega generating the clock and monitoring the bus, an 8k AT28C64B ROM, and BeanPort directly on the CPU bus:
 
 ![Bean65 breadboard with the EEPROM, BeanPort Pico and Arduino Mega](./images/bean65_breadboard.jpg)
 
