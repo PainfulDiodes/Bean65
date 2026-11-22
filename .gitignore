@@ -44,3 +44,6 @@ fp-info-cache
 
 # macOS Finder metadata
 .DS_Store
+
+# draw.io backups
+*.bkp
