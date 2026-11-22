@@ -46,6 +46,8 @@ When both BeanPort and BeanBoard are connected, the jumper is removed and BeanBo
 
 BeanBoardSPI can piggyback on BeanBoard and provide storage and replace the character LCD with a TFT display.
 
+![BeanDeck: BeanPort on Bean65, and a TFT display and flash storage on BeanBoardSPI, both stacked on one BeanBoard](./images/beandeck.drawio.svg)
+
 ## Schematic
 
 ![Bean65 schematic](./images/bean65_schematic.png)
