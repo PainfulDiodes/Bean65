@@ -1,6 +1,6 @@
 # Bean65
 
-6502 homebrew computer that can take advantage of [BeanBoard](https://github.com/PainfulDiodes/BeanBoard)/[BeanBoardSPI](https://github.com/PainfulDiodes/BeanBoardSPI) peripherals which were originally designed for the Z80 [BeanZee](https://github.com/PainfulDiodes/BeanZee).
+6502 homebrew computer that can take advantage of [BeanBoard](https://github.com/PainfulDiodes/BeanBoard) and [BeanBoardSPI](https://github.com/PainfulDiodes/BeanBoardSPI) peripherals which were originally designed for the Z80 [BeanZee](https://github.com/PainfulDiodes/BeanZee).
 
 See also: [PainfulDiodes Blog: Bean65](https://painfuldiodes.wordpress.com/category/bean65/)
 
@@ -14,11 +14,11 @@ See also: [PainfulDiodes Blog: Bean65](https://painfuldiodes.wordpress.com/categ
 
 The CPU bus touches only ROM, RAM and the VIA, decoded with a single 74HCT00 based on Garth Wilson's [simple ROM/RAM/VIA design](https://wilsonminesco.com/6502primer/potpourri.html): RAM at 0000-3FFF, the VIA at 4000-7FFF and ROM at 8000-FFFF.
 
-Using a reset supervisor frees up one NAND, and dedicating the IO address range to a single VIA frees up a second. 
+Using a reset supervisor frees up one NAND, and dedicating the IO address range to a single VIA frees up a second.
 
 One of these is used to invert R/W# for the ROM's OE#, so the ROM only drives the bus on reads and a stray write to a ROM address can't cause bus contention.
 
-The other helps meet BeanBoard's requirements (see below).
+The other provides BeanBoard's RD# (see below).
 
 ## Slow Bus / BeanBoard Interface
 
@@ -26,25 +26,25 @@ Every peripheral sits on a "slow bus" behind the VIA, under software control, al
 
 The "slow bus" provides 6502-style signals - address and R/W#, with the addition of an I/O enable strobe.
 
-This are made available through two 2x7 VIA Interface headers (in Garth Wilson's VIA connector format).
+These are made available through two 2x7 VIA Interface headers (in [Garth Wilson's VIA connector format](https://wilsonminesco.com/6502primer/potpourri.html#BAS_CPU)).
 
-These also map economically onto BeanBoard's Z80-style bus: the strobe provides IORQ#, R/W# serves directly as WR#, and the one spare 74HCT00 gate inverts R/W# for RD#. Bean65 plugs into the BeanBoard's sockets.
+These also map economically onto BeanBoard's Z80-style bus: the strobe provides IORQ#, R/W# serves directly as WR#, and the other freed 74HCT00 gate inverts R/W# for RD#. Bean65 plugs into the BeanBoard's sockets.
 
 ## BeanPort
 
-[BeanPort](https://github.com/PainfulDiodes/BeanPort) USB interface was designed so it can plug directly into Bean65's VIA connectors.
+The [BeanPort](https://github.com/PainfulDiodes/BeanPort) USB interface was designed so it can plug directly into Bean65's VIA connectors.
 
 ## Multi-mode
 
-Bean65 was designed to cooperate with the existing BeanBoard and BeanBoardSPI peripherals. This required some compromises to the Bean65.
+Bean65 was designed to cooperate with the existing BeanBoard and BeanBoardSPI peripherals. This required some compromises: the BeanBoard interface and connectors suit the Z80 bus, so the slow bus is adapted to fit them. Designed from scratch, the VIA slow bus would be used throughout.
 
-When neither BeanPort or BeanBoard are connected, with the Bean65 in standalone mode, the VIA connectors can serve as a general-purpose VIA connector.
+When neither BeanPort nor BeanBoard is connected, with the Bean65 in standalone mode, the VIA connectors are available for general-purpose use.
 
 If BeanPort is connected, the slow bus IO enable strobe is routed to BeanPort via a jumper - making it the only IO device attached to the Bean65.
 
-When both BeanPort and BeanBoard are connected, the jumper is removed and BeanBoard decodes A1-A3 and provides its own IO enable strobe back to BeanPort, so that both BeanPort and BeanBoard share the slow bus. In this configuration the Bean65 has USB, keyboard and a small LCD display available. 
+When both BeanPort and BeanBoard are connected, the jumper is removed and BeanBoard, which decodes A1-A3, returns BeanPort's enable through the jumper header (as on BeanZee), so that both BeanPort and BeanBoard share the slow bus. In this configuration the Bean65 has USB, keyboard and a small LCD display available.
 
-BeanBoardSPI can piggyback on BeanBoard and provide storage and replace the LCD display with a TFT panel display.
+BeanBoardSPI can piggyback on BeanBoard and provide storage and replace the character LCD with a TFT display.
 
 ## Schematic
 
