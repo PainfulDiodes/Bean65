@@ -14941,7 +14941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical"
+		(property "Footprint" "painfuldiodes:PinHeader_2x07_P2.54mm_Vertical_IDC_Clearance"
 			(at 303.53 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -15218,7 +15218,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical"
+		(property "Footprint" "painfuldiodes:PinHeader_2x07_P2.54mm_Vertical_IDC_Clearance"
 			(at 303.53 100.33 0)
 			(hide yes)
 			(show_name no)
