@@ -7878,6 +7878,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Provides mechanical stability"
+		(exclude_from_sim no)
+		(at 45.466 129.286 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+		)
+		(uuid "77c765fa-f8e9-448d-a8e6-c471f1e9b691")
+	)
 	(text "35 NC"
 		(exclude_from_sim no)
 		(at 81.28 113.538 0)
@@ -7887,6 +7897,12 @@
 			)
 		)
 		(uuid "8adc03a5-d696-48c7-84a3-89c8e9cb1ea4")
+	)
+	(junction
+		(at 45.72 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01dadfb0-df62-49fa-afb3-3b0b78e8417c")
 	)
 	(junction
 		(at 148.59 128.27)
@@ -10642,6 +10658,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 123.19) (xy 45.72 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1a9912d-e5de-4cd5-83da-f4c9962efa7f")
+	)
+	(wire
+		(pts
 			(xy 168.91 139.7) (xy 168.91 143.51)
 		)
 		(stroke
@@ -11642,6 +11668,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 125.73) (xy 45.72 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62fbbf0-0ba1-44c4-8f69-36f174bbac95")
+	)
+	(wire
+		(pts
 			(xy 311.15 102.87) (xy 326.39 102.87)
 		)
 		(stroke
@@ -11989,6 +12025,16 @@
 			(justify left bottom)
 		)
 		(uuid "17fe991b-4251-450e-a8db-e1bc86033dc2")
+	)
+	(label "GND"
+		(at 40.64 125.73 0)
+		(effects
+			(font
+				(size 1.0668 1.0668)
+			)
+			(justify left bottom)
+		)
+		(uuid "1930923b-75b2-431b-b8cd-2a2e0475a767")
 	)
 	(label "R{slash}~{W}"
 		(at 128.27 13.97 0)
@@ -17459,6 +17505,86 @@
 				(path "/e94fb5a8-0d0a-497c-930d-9dbc4f5c8cfd"
 					(reference "U2")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 50.8 123.19 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f86d6b26-2a96-4ddc-b71e-a6b43b63870c")
+		(property "Reference" "J14"
+			(at 45.212 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+			)
+		)
+		(property "Value" "Anchor Ground"
+			(at 43.688 119.126 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 50.8 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0668 1.0668)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e5c18af-923d-4bf5-9321-bb8bf5cf6eaf")
+		)
+		(pin "2"
+			(uuid "2f7e259f-67fc-4152-a666-72ccfd04d4d1")
+		)
+		(instances
+			(project "bean65"
+				(path "/e94fb5a8-0d0a-497c-930d-9dbc4f5c8cfd"
+					(reference "J14")
+					(unit 1)
 				)
 			)
 		)
