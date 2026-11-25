@@ -54,6 +54,8 @@ BeanBoardSPI can piggyback on BeanBoard and provide storage and replace the char
 
 [kicad/bean65.pdf](kicad/bean65.pdf)
 
+![kicad/bean65.png](kicad/bean65.png)
+
 ## Breadboard Prototype
 
 A prototype (without RAM or VIA) has an Arduino Mega generating the clock and monitoring the bus, an 8k AT28C64B ROM, and BeanPort directly on the CPU bus:
