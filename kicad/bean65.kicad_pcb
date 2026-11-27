@@ -258,7 +258,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm"
 		(layer "F.Cu")
 		(uuid "1dea2e47-8da2-4d20-a58a-76ddcd4c845e")
-		(at -87.7316 120.4468 180)
+		(at 127.2286 119.2784 180)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "U4"
@@ -517,7 +517,7 @@
 			)
 		)
 		(point
-			(at -95.3516 103.9368)
+			(at 119.6086 102.7684)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "142bf5b9-96e9-41ee-a84a-031ddb955436")
@@ -2924,7 +2924,7 @@
 	(footprint "Package_DIP:DIP-40_W15.24mm"
 		(layer "F.Cu")
 		(uuid "51745464-14aa-4367-add9-d19362f14775")
-		(at -161.3154 66.7766)
+		(at 74.8284 77.8764)
 		(descr "40-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "U7"
@@ -3120,7 +3120,7 @@
 			)
 		)
 		(point
-			(at -153.6954 90.9066)
+			(at 82.4484 102.0064)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "39f98e85-b4b7-4e38-8575-3c5932f341a4")
@@ -3761,7 +3761,7 @@
 	(footprint "Package_DIP:DIP-40_W15.24mm"
 		(layer "F.Cu")
 		(uuid "66d750cd-4dc8-477d-93e6-28e990067f1b")
-		(at -129.8702 65.0748)
+		(at 93.2688 76.1492)
 		(descr "40-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "U1"
@@ -3957,7 +3957,7 @@
 			)
 		)
 		(point
-			(at -122.2502 89.2048)
+			(at 100.8888 100.2792)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "898e2427-515d-4da0-86bb-94ca2fc91e26")
@@ -4587,7 +4587,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm"
 		(layer "F.Cu")
 		(uuid "7fff5404-3c92-4fb6-9e2e-66d3ee3f8f77")
-		(at -45.212 121.1326 180)
+		(at 146.3294 119.0752 180)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils)")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil")
 		(property "Reference" "U3"
@@ -4846,7 +4846,7 @@
 			)
 		)
 		(point
-			(at -52.832 104.6226)
+			(at 138.7094 102.5652)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "1173b559-568a-4e28-b14c-8f53b7c53ebe")
@@ -6317,7 +6317,7 @@
 	(footprint "painfuldiodes:PinHeader_2x07_P2.54mm_Vertical_IDC_Clearance"
 		(layer "F.Cu")
 		(uuid "bc2e7dc8-d805-4d0f-925d-d4c62058bfc7")
-		(at -200.7616 65.8114)
+		(at 60.9092 85.344)
 		(descr "Unshrouded 2x07 2.54mm pin header, with silkscreen and courtyard sized for a mating 14-way female IDC ribbon socket (DIN 41651 box header outline used as the clearance), and key position marked on the pin 1 column side")
 		(tags "pin header 2x07 2.54mm IDC ribbon socket clearance")
 		(property "Reference" "J3"
@@ -7735,7 +7735,7 @@
 	(footprint "painfuldiodes:PinHeader_2x07_P2.54mm_Vertical_IDC_Clearance"
 		(layer "F.Cu")
 		(uuid "e5b74497-5b3b-4c0f-924f-a34176ed7d29")
-		(at -200.914 94.5134)
+		(at 60.8838 112.268)
 		(descr "Unshrouded 2x07 2.54mm pin header, with silkscreen and courtyard sized for a mating 14-way female IDC ribbon socket (DIN 41651 box header outline used as the clearance), and key position marked on the pin 1 column side")
 		(tags "pin header 2x07 2.54mm IDC ribbon socket clearance")
 		(property "Reference" "J4"
@@ -30739,7 +30739,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "a23b6474-e838-4ccd-9bf4-dd3768885d64")
-		(at -178.308 64.897 180)
+		(at 67.7418 97.8408 180)
 		(descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x08 2.54mm single row")
 		(property "Reference" "J10"
@@ -31039,7 +31039,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical"
 		(layer "B.Cu")
 		(uuid "bfdf8024-71f3-46c5-9522-a39ef6656775")
-		(at 134.62 23.114)
+		(at 179.1716 120.7516)
 		(descr "Through hole straight pin header, 1x16, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x16 2.54mm single row")
 		(property "Reference" "J11"
